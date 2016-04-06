@@ -31,7 +31,7 @@ else:
     while True:
 	    print "Time:",current_time,"sec"
 	    print "Velocity:",heavenly_body[args.body]*current_time,"m/s/s", " Distance:",0.5*heavenly_body[args.body]*math.pow(current_time,2),"m"
-	    if current_time == args.max_time:
+	    if current_time >= args.max_time:
 		    break
 	    current_time = current_time + args.sample_time
     sys.exit("Complete")
