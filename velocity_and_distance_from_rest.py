@@ -28,10 +28,8 @@ if args.max_time == None or args.max_time == 0 or args.body == None or len(args.
 else:
     current_time = 0
     print( args.max_time)
-    while True:
+    while current_time <= args.max_time:
 	    print "Time:",current_time,"sec"
 	    print "Velocity:",heavenly_body[args.body]*current_time,"m/s/s", " Distance:",0.5*(heavenly_body[args.body]*math.pow(current_time,2)),"m"
-	    if current_time >= args.max_time:
-		    break
 	    current_time = current_time + args.sample_time
     sys.exit("Complete")
