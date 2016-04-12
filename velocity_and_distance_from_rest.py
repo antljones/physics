@@ -15,7 +15,7 @@ heavenly_body = {'mercury' : 3.7,
 
 #Set the argument parser and command line arguments
 parser = argparse.ArgumentParser(description="Produce ")
-parser.add_argument('-t', dest='max_time', action='store', type=int, help='the amount of time given')
+parser.add_argument('-t', dest='max_time', action='store', type=int, help='the amount of time given in seconds')
 parser.add_argument('-s', dest='sample_time', action='store', type=float, help='the amount of time to sample')
 parser.add_argument('-b', dest='body', action='store', help='heavenly body')
 
